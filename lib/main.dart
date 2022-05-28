@@ -32,7 +32,7 @@ class _whatsapp extends State<whatsapp> {
             padding: const EdgeInsets.only(
               left: 35.0,
               right: 35.0,
-              top: 70.0,
+              top: 50.0,
             ),
             child: Column(
               children: [
@@ -178,48 +178,24 @@ class _whatsapp extends State<whatsapp> {
                             ),
                           ),
                           SizedBox(
-                            height: 10,
+                            height: 7,
                           ),
-                          Row(
-                            mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                            children: [
-                              Row(
-                                children: [
-                                  Checkbox(
-                                    value: isRememberme,
-                                    onChanged: (value) {
-                                      setState(
-                                        () {
-                                          isRememberme = !isRememberme;
-                                        },
-                                      );
-                                    },
-                                  ),
-                                  Text(
-                                    'Remember me',
-                                    style: TextStyle(
-                                      color: Colors.black.withOpacity(0.6),
-                                      fontFamily: 'Segoe',
-                                      fontSize: 14,
-                                    ),
-                                  ),
-                                ],
+                          Container(
+                            alignment: Alignment.centerRight,
+                            child: TextButton(
+                              onPressed: () {},
+                              child: Text(
+                                'Forgot password',
+                                style: TextStyle(
+                                    color: HexColor('#25D366'),
+                                    fontWeight: FontWeight.bold,
+                                    fontSize: 14,
+                                    fontFamily: 'Segoe'),
                               ),
-                              TextButton(
-                                onPressed: () {},
-                                child: Text(
-                                  'Forgot password',
-                                  style: TextStyle(
-                                      color: HexColor('#25D366'),
-                                      fontWeight: FontWeight.bold,
-                                      fontSize: 14,
-                                      fontFamily: 'Segoe'),
-                                ),
-                              ),
-                            ],
+                            ),
                           ),
                           SizedBox(
-                            height: 10,
+                            height: 7,
                           ),
                           Padding(
                             padding:
@@ -261,7 +237,7 @@ class _whatsapp extends State<whatsapp> {
                           ),
                           Padding(
                             padding:
-                                const EdgeInsets.only(bottom: 10.0, top: 10),
+                                const EdgeInsets.only(bottom: 10.0, top: 30),
                             child: Container(
                               alignment: Alignment.bottomCenter,
                               width: 135,
@@ -279,7 +255,7 @@ class _whatsapp extends State<whatsapp> {
                 Container(
                   alignment: Alignment.bottomCenter,
                   child: Padding(
-                    padding: const EdgeInsets.only(bottom: 50, top: 10),
+                    padding: const EdgeInsets.only(bottom: 45, top: 10),
                     child: Column(
                       children: [
                         Text(
@@ -287,7 +263,7 @@ class _whatsapp extends State<whatsapp> {
                           style: TextStyle(fontFamily: 'Segoe', fontSize: 16),
                         ),
                         SizedBox(
-                          height: 25,
+                          height: 22,
                         ),
                         Row(
                           mainAxisAlignment: MainAxisAlignment.spaceAround,
